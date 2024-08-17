@@ -167,13 +167,13 @@ const Header: React.FC = () => {
               {menu.map(({ id, link, icon, icon2, submenu }) => (
                 <div
                   key={id}
-                  className={` text-white text-center  w-full   flex  flex-wrap justify-between mt-6   border-b-2 items-center   cursor-pointer `}
+                  className={` text-white text-center  w-full   flex  flex-wrap justify-between mt-6   border-b-[1px] items-center   cursor-pointer `}
                   onClick={() => handleclick(id)}
                 >
                   <p
                     className={`${
                       Openindex === id ? "text-black" : "text-white"
-                    } font-serif text-center  pl-4 text-sm`}
+                    } font-serif text-center pb-2  pl-4 text-sm`}
                   >
                     {link}
                   </p>
@@ -192,7 +192,7 @@ const Header: React.FC = () => {
                         return (
                           <li
                             key={id}
-                            className="text-start px-8 py-2 text-sm  border-t-2 border-white text-white"
+                            className="text-start px-8 py-2 text-sm  border-t-[1px] border-white text-white"
                           >
                             {text}
                           </li>

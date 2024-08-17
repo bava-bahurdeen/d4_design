@@ -123,7 +123,7 @@ export default function Home() {
       <section>
         <div className="container mx-auto grid place-items-center  lg:h-svh">
           <div className="grid place-items-center font-trebuchet gap-y-8  ">
-            <h2 className="font-trebuchet text-center text-primary text-4xl font-semibold">
+            <h2 className="font-trebuchet text-center text-primary text-4xl leading-10 font-semibold">
               We are Certified SaaS Consultants
             </h2>
             <p className="font-light text-center text-lg  md:w-10/12">

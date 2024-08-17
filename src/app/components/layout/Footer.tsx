@@ -7,7 +7,7 @@ import { footer } from './data'
 export default function Footer() {
   return (
     
-    <footer className='container mx-auto bg-primary p-4'>
+    <footer className='container mx-auto bg-primary p-4 '>
 <div className='grid md:place-items-center '>
     <div className='flex flex-col lg:flex-row gap-y-10 items-center lg:gap-x-32 xl:gap-x-60'>
         <Image src={logo} alt='footer-image' className='w-36 object-contain'/>
