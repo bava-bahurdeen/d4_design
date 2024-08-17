@@ -58,7 +58,7 @@ export default function Home() {
 
   return (
     <main>
-      <span className="fixed text-3xl md:text-5xl bg-[#949393] rounded-full text-white p-2 md:p-4 bottom-5 right-2 ">
+      <span className="fixed z-50 text-3xl md:text-5xl bg-[#949393] rounded-full text-white p-2 md:p-4 bottom-5 right-2 ">
         <PiChatsBold />
       </span>
       {/* hero section */}
@@ -281,10 +281,10 @@ export default function Home() {
                         placeholder="Select a Timezone"
                         className="!w-56 !h-10 !text-slate-400"
                         // filterOption={(input, option) =>
-                        //   (option?.label ?? "")
-                        //     .toLowerCase()
+                        //   (option?.label ?? "").toLowerCase()
                         //     .includes(input.toLowerCase())
                         // }
+                        //   optionFilterProp="children"
                       >
                         {countryTimezones.map(
                           ({id, country, timezone, utcOffset }) => (
