@@ -121,7 +121,7 @@ export default function Home() {
       {/* We are Certified SaaS Consultants section */}
 
       <section>
-        <div className="container mx-auto grid place-items-center  sm:h-svh">
+        <div className="container mx-auto grid place-items-center  lg:h-svh">
           <div className="grid place-items-center font-trebuchet gap-y-8  ">
             <h2 className="font-trebuchet text-center text-primary text-3xl font-semibold">
               We are Certified SaaS Consultants
