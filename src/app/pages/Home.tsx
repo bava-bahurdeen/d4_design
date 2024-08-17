@@ -136,7 +136,7 @@ export default function Home() {
               train you and your users about its functionality and also offer
               first-level customer support and manage relationships.
             </p>
-            <p className="font-light text-center text-lg w-10/12">
+            <p className="font-light text-center text-lg md:w-10/12">
               With more than 10 years of experience in SaaS business, We know
               just what you need. D4A is led by experienced business and
               technology professionals. We have focus on cloud based ERP and CRM
@@ -145,7 +145,7 @@ export default function Home() {
               Application Maintenance and Data Management. We also have
               expertise on Zoho{"'"}s industry specific vertical solutions .
             </p>
-            <p className="font-light text-center text-lg w-10/12">
+            <p className="font-light text-center text-lg md:w-10/12">
               With our{" "}
               <span className="text-primary font-semibold">
                 SaaS Consultation services
