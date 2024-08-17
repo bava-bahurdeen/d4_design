@@ -22,7 +22,6 @@ const config: Config = {
       arvo: ['Arvo', 'serif'],
       Arimo:[ "Arimo", "sans-serif"],
       serif: ['"MS Serif"', 'New York', 'serif'],
-      roboto: ['Roboto', 'sans-serif'],
       trebuchet: ['"Trebuchet MS"', 'sans-serif'],
     },
     extend: {
