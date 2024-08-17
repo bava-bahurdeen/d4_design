@@ -202,9 +202,9 @@ const Header: React.FC = () => {
                   )}
                 </div>
               ))}
-              <div className=" pl-80 flex py-4 gap-2 items-center justify-center w-full ">
-                <LuPhone color="#252530" />
-                <MdMailOutline color="#252530" />
+              <div className=" pl-72 flex py-4 gap-x-4 items-center justify-center w-full ">
+                <span className="text-lg"><MdMailOutline color="#252530" /></span>
+               <span className="text-lg"> <LuPhone color="#252530" /></span>
               </div>
             </motion.div>
           )}
