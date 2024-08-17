@@ -279,11 +279,11 @@ export default function Home() {
                         showSearch
                         placeholder="Select a Timezone"
                         className="!w-56 !h-10 !text-slate-400"
-                        filterOption={(input, option) =>
-                          (option?.label ?? "")
-                            .toLowerCase()
-                            .includes(input.toLowerCase())
-                        }
+                        // filterOption={(input, option) =>
+                        //   (option?.label ?? "")
+                        //     .toLowerCase()
+                        //     .includes(input.toLowerCase())
+                        // }
                       >
                         {countryTimezones.map(
                           ({id, country, timezone, utcOffset }) => (
