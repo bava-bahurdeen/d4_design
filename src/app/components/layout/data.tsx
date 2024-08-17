@@ -1,16 +1,15 @@
-import { AiOutlineMail } from "react-icons/ai";
+
+import { MdMailOutline } from "react-icons/md"
 import { LuPhone } from "react-icons/lu";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa6";
-import { FaFacebookF } from "react-icons/fa6";
-import { TfiYoutube } from "react-icons/tfi";
-import { FaTwitter } from "react-icons/fa";
-import { MdOutlineKeyboardArrowDown ,MdOutlineKeyboardArrowUp } from "react-icons/md";
+import {FaInstagram,FaFacebookF} from 'react-icons/fa6'
+import {FaLinkedinIn,FaTwitter} from 'react-icons/fa'
+import {TfiYoutube} from 'react-icons/tfi'
+import { MdOutlineKeyboardArrowDown ,MdOutlineKeyboardArrowUp } from 'react-icons/md'
 
 export const social1=[
     {
         id:1,
-        icon:<AiOutlineMail/>,
+        icon:<MdMailOutline/>,
         text:"sales@d4aon1ine.com"
     },
     {
@@ -167,12 +166,12 @@ export const footer=[
    },
    {
     id:3,
-    icon:<AiOutlineMail/>,
+    icon:<MdMailOutline/>,
     text:"sales@d4aonline.com"
    },
    {
     id:4,
-    icon:<AiOutlineMail/>,
+    icon:<MdMailOutline/>,
     text:"support@d4aonline.com"
    }
 ]

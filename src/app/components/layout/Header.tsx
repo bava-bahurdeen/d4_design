@@ -4,9 +4,9 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import logo from "@assets/nav/D4A-logo Only-final-vertical -1.png";
 import { social1, social2, menu } from "./data";
-import { AiOutlineMail } from "react-icons/ai";
+import { MdMailOutline } from "react-icons/md";
 import { LuPhone } from "react-icons/lu";
-import { motion , AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Header: React.FC = () => {
   const [Isopen, setIsopen] = useState(false);
@@ -81,9 +81,7 @@ const Header: React.FC = () => {
                     className="h-12 px-3 flex items-center gap-2 border-r-[1px] border-black border-dotted"
                   >
                     <span>{icon}</span>
-                    <p className=" text-black2 font-serif">
-                      {text}
-                    </p>
+                    <p className=" text-black2 font-serif">{text}</p>
                   </div>
                 ))}
                 {social2.map(({ id, icon }) => (
@@ -157,63 +155,61 @@ const Header: React.FC = () => {
         {/* Mobile Menu */}
       </header>
       <div className="overflow-hidden">
-<AnimatePresence>
-
-{Isopen && 
-  <motion.div
-  initial="hidden"
-  animate="visible"
-  exit="hidden"
-  variants={menuVariants}
-   className={` flex flex-col  w-full h-full items-start  bg-primary transition-all duration-1000`}
- >
-   {menu.map(({ id, link, icon, icon2, submenu }) => (
-     <div
-       key={id}
-       className={` text-white text-center  w-full   flex  flex-wrap justify-between mt-6   border-b-2 items-center   cursor-pointer `}
-       onClick={() => handleclick(id)}
-     >
-       <p
-         className={`${
-           Openindex === id ? "text-black" : "text-white"
-         } font-serif text-center  pl-4 text-sm`}
-       >
-         {link}
-       </p>
-       {Openindex === id ? (
-         <span className="text-2xl ">{icon2}</span>
-       ) : (
-         <span className="text-2xl ">{icon}</span>
-       )}
-       {submenu && (
-         <ul
-           className={`${
-             Openindex === id ? "block" : "hidden"
-           } w-full   gap-y-5  font-serif`}
-         >
-           {submenu.map(({ id, text }) => {
-             return (
-               <li
-                 key={id}
-                 className="text-start px-8 py-2 text-sm  border-t-2 border-white text-white"
-               >
-                 {text}
-               </li>
-             );
-           })}
-         </ul>
-       )}
-     </div>
-   ))}
-   <div className=" pl-80 flex py-4 gap-2 items-center justify-center w-full ">
-    <LuPhone color="#252530"/>
-    <AiOutlineMail  color="#252530"/>
-   </div>
- </motion.div>
-}
-</AnimatePresence>
+        <AnimatePresence>
+          {Isopen && (
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              exit="hidden"
+              variants={menuVariants}
+              className={` flex flex-col  w-full h-full items-start  bg-primary transition-all duration-1000`}
+            >
+              {menu.map(({ id, link, icon, icon2, submenu }) => (
+                <div
+                  key={id}
+                  className={` text-white text-center  w-full   flex  flex-wrap justify-between mt-6   border-b-2 items-center   cursor-pointer `}
+                  onClick={() => handleclick(id)}
+                >
+                  <p
+                    className={`${
+                      Openindex === id ? "text-black" : "text-white"
+                    } font-serif text-center  pl-4 text-sm`}
+                  >
+                    {link}
+                  </p>
+                  {Openindex === id ? (
+                    <span className="text-2xl ">{icon2}</span>
+                  ) : (
+                    <span className="text-2xl ">{icon}</span>
+                  )}
+                  {submenu && (
+                    <ul
+                      className={`${
+                        Openindex === id ? "block" : "hidden"
+                      } w-full   gap-y-5  font-serif`}
+                    >
+                      {submenu.map(({ id, text }) => {
+                        return (
+                          <li
+                            key={id}
+                            className="text-start px-8 py-2 text-sm  border-t-2 border-white text-white"
+                          >
+                            {text}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
+                </div>
+              ))}
+              <div className=" pl-80 flex py-4 gap-2 items-center justify-center w-full ">
+                <LuPhone color="#252530" />
+                <MdMailOutline color="#252530" />
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
-    
 
       {/* Fixed Menu on Scroll */}
       <div className="hidden lg:block">

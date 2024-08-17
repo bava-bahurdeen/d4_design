@@ -11,7 +11,7 @@ import partner3 from '@assets/hero/tally partner logo.png'
 import { motion,AnimatePresence } from "framer-motion";
 import { FaRedhat,FaRegUser } from "react-icons/fa6";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { FaRegCalendarAlt } from "react-icons/fa";
+import { FaRegCalendarAlt } from "react-icons/fa"
 import logo from '@assets/nav/D4A-logo Only-final-vertical -1.png'
 import { FaRegCheckCircle } from "react-icons/fa";
 import { boxes, Flex, saas,countryTimezones } from "./data";
