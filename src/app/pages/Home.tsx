@@ -123,10 +123,10 @@ export default function Home() {
       <section>
         <div className="container mx-auto grid place-items-center  lg:h-svh">
           <div className="grid place-items-center font-trebuchet gap-y-8  ">
-            <h2 className="font-trebuchet text-center text-primary text-3xl font-semibold">
+            <h2 className="font-trebuchet text-center text-primary text-4xl font-semibold">
               We are Certified SaaS Consultants
             </h2>
-            <p className="font-light text-center text-lg w-11/12 md:w-10/12">
+            <p className="font-light text-center text-lg  md:w-10/12">
               <span className="text-primary font-semibold">
                 D4A Cloud ERP Solutions is a SaaS Consulting Partner{" "}
               </span>{" "}
