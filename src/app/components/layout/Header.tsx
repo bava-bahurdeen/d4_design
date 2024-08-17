@@ -28,9 +28,9 @@ const Header: React.FC = () => {
   };
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 200) {
         setOnMenu(true);
-      } else if (window.screenY < 100) {
+      } else if (window.screenY < 200) {
         setOnMenu(false);
       }
     };
@@ -117,7 +117,7 @@ const Header: React.FC = () => {
                         Openindex === id
                           ? "block transition-all duration-300 opacity-100"
                           : "hidden opacity-0"
-                      } absolute top-14 left-0 bg-primary w-64 text-start`}
+                      } absolute top-14 left-0 bg-primary w-64 text-start font-serif`}
                     >
                       {submenu.map(({ id, text }) => (
                         <li
@@ -176,7 +176,7 @@ const Header: React.FC = () => {
        <p
          className={`${
            Openindex === id ? "text-black" : "text-white"
-         } font-roboto text-center  pl-4 text-sm`}
+         } font-serif text-center  pl-4 text-sm`}
        >
          {link}
        </p>
@@ -189,7 +189,7 @@ const Header: React.FC = () => {
          <ul
            className={`${
              Openindex === id ? "block" : "hidden"
-           } w-full   gap-y-5 `}
+           } w-full   gap-y-5  font-serif`}
          >
            {submenu.map(({ id, text }) => {
              return (
@@ -227,7 +227,7 @@ const Header: React.FC = () => {
               key={id}
               className={`${
                 id === 1 ? "bg-primary text-white" : ""
-              } text-center relative flex gap-2 items-center py-[8px] px-[16px] rounded cursor-pointer hover:bg-primary hover:text-white`}
+              } text-center relative flex gap-2 items-center py-[8px] px-[16px] font-serif rounded cursor-pointer hover:bg-primary hover:text-white`}
               onMouseEnter={() => handleEnter(id)}
               onMouseLeave={handleLeave}
             >
@@ -239,7 +239,7 @@ const Header: React.FC = () => {
                     Openindex === id
                       ? "block transition-all duration-300 opacity-100"
                       : "hidden opacity-0"
-                  } absolute top-14 left-0 bg-primary w-64 text-start`}
+                  } absolute top-14 left-0 font-serif bg-primary w-64 text-start`}
                 >
                   {submenu.map(({ id, text }) => (
                     <li
