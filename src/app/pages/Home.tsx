@@ -257,7 +257,7 @@ export default function Home() {
                 >
                   <div className="flex items-center">
                     <Image src={logo} className="w-16" alt="logo" />
-                    <p className="text-white">Let's Talk</p>
+                    <p className="text-white">Let{"'"}s Talk</p>
                   </div>
                   <div className="flex items-center">
                     <p className="text-xs text-white">15 mins</p>
@@ -365,6 +365,7 @@ export default function Home() {
             {Flex.map(({ id, Img, head, lead }) => {
               return (
                 <motion.div
+                key={id}
                   initial={{ y: "100%" }}
                   whileInView={{ y: 0 }}
                   transition={{ duration: 0.8 }}
