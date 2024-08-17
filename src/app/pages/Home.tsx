@@ -308,24 +308,31 @@ export default function Home() {
             <p className="text-white text-xs">
               Your appointment will be booked with{" "}
             </p>
-            <div className="flex  flex-col-reverse md:flex-row  justify-between">
+            <div className="flex  flex-col-reverse gap-y-2 md:flex-row  justify-between">
               <div>month</div>
               <div>
-                <Select
-                  showSearch
-                  placeholder="Select Timezone"
-                  className="!w-56 !h-10 !text-slate-400"
-                  filterOption={(input, option) =>
-                    (option?.label ?? "")
-                      .toLowerCase()
-                      .includes(input.toLowerCase())
-                  }
-                  options={[
-                    { value: "1", label: "India" },
-                    { value: "2", label: "America" },
-                    { value: "3", label: "japan" },
-                  ]}
-                />
+              <Select
+                        showSearch
+                        placeholder="Select a Timezone"
+                        className="!w-56 !h-10 !text-slate-400"
+                        // filterOption={(input, option) =>
+                        //   (option?.label ?? "")
+                        //     .toLowerCase()
+                        //     .includes(input.toLowerCase())
+                        // }
+                      >
+                        {countryTimezones.map(
+                          ({id, country, timezone, utcOffset }) => (
+                            <Option
+                              key={id}
+                              value={timezone}
+                              label={country}
+                            >
+                              {`${country} (${utcOffset})`}
+                            </Option>
+                          )
+                        )}
+                      </Select>
               </div>
             </div>
           </div>
