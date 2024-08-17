@@ -164,6 +164,7 @@ export default function Home() {
           <motion.div
             initial={{ y: "100%" }}
             whileInView={{ y: 0 }}
+            viewport={{once:true}}
             transition={{ duration: 0.8 }}
             className="  flex flex-col lg:flex-row justify-center items-center gap-y-3 gap-x-7 mt-10 lg:mt-0"
           >
