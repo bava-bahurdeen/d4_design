@@ -276,8 +276,9 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="flex flex-col-reverse md:flex-row justify-between">
-                    <div>
-                    </div>
+                  <div className="grid place-items-center mt-10">
+              <Calendar defaultView="month"/>     
+                         </div>
                     <div>
                       <Select
                         showSearch
@@ -312,9 +313,9 @@ export default function Home() {
               Your appointment will be booked with{" "}
             </p>
             <div className="flex  flex-col-reverse gap-y-2 md:flex-row  justify-between">
-              <div className="grid place-items-center mt-10">
+              {/* <div className="grid place-items-center mt-10">
               <Calendar defaultView="month"/>     
-                         </div>
+                         </div> */}
               <div className="mt-10">
               <Select
                         showSearch
