@@ -67,7 +67,7 @@ export default function Home() {
       {/* hero section */}
       <section>
         <div className="container mx-auto py-14">
-          <div className="flex flex-col lg:flex-row gap-y-5 justify-around items-center">
+          <div className="flex flex-col lg:flex-row gap-y-5 justify-center gap-x-52 items-center">
             <motion.div
               initial="hidden"
               animate="visible"
@@ -75,7 +75,7 @@ export default function Home() {
               variants={hero1}
               className="grid place-items-center gap-y-4"
             >
-              <h1 className="text-primary font-Arvo w-[18rem]  md:w-[24rem] font-semibold leading-loose  text-center text-wrap text-2xl lg:text-3xl">
+              <h1 className="text-primary font-Arvo w-[18rem]  md:w-[25rem] font-semibold !leading-[3rem]  text-center text-wrap text-2xl lg:text-3xl">
                 {" "}
                 <span className="text-4xl md:text-6xl font-semibold">
                   TRANSFORM
@@ -91,7 +91,7 @@ export default function Home() {
                 SOFTWARE!
               </h1>
               <div className="hidden lg:block">
-                <button className=" p-3 px-12 border rounded shadow-lg shadow-primary border-primary flex items-center gap-x-2 text-primary text-xl hover:bg-primary hover:text-white transition-all duration-300 ">
+                <button className=" p-3 px-12 outline-none border rounded shadow-lg shadow-primary border-primary flex items-center gap-x-2 text-primary text-xl hover:bg-primary hover:text-white transition-all duration-300 ">
                   Get Started!{" "}
                   <span className="text-xl">
                     <CgArrowRightR />
@@ -106,9 +106,9 @@ export default function Home() {
               variants={hero2}
               className=" grid place-items-center space-y-10"
             >
-              <Image src={zoho} alt="zoho" className="w-[300px]"></Image>
-              <Image src={tally} alt="tally" className="w-[300px]"></Image>
-              <Image src={monday} alt="monday" className="w-[300px]"></Image>
+              <Image src={zoho} alt="zoho" className="w-[290px]"></Image>
+              <Image src={tally} alt="tally" className="w-[236px]"></Image>
+              <Image src={monday} alt="monday" className="w-[325px]"></Image>
               <div className="block lg:hidden">
                 <button className=" p-3 px-12 border rounded shadow-lg shadow-primary border-primary flex items-center gap-x-2 text-primary text-xl ">
                   Get Started!{" "}
@@ -160,7 +160,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section></section>
+    
       {/* partner images section */}
       <section>
         <div className="container mx-auto overflow-hidden  ">
@@ -169,7 +169,7 @@ export default function Home() {
             whileInView={{ y: 0 }}
             viewport={{once:true}}
             transition={{ duration: 0.8 }}
-            className="  flex flex-col lg:flex-row justify-center items-center gap-y-3 gap-x-7 mt-10 lg:mt-0"
+            className="  flex flex-col lg:flex-row justify-center items-center gap-y-3 gap-x-7 mt-10 lg:mt-0  xl:mt-0"
           >
             <Image
               src={partner1}

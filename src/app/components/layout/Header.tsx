@@ -63,8 +63,8 @@ const Header: React.FC = () => {
         <nav className="flex justify-between items-center lg:items-stretch lg:flex-col lg:justify-center">
           {/* First Menu */}
           <div className="flex  justify-around items-center">
-            <div className="flex flex-col lg:flex-row gap-x-2">
-              <Image src={logo} alt="logo" className="w-20 object-contain" />
+            <div className="flex flex-col lg:flex-row gap-x-3">
+              <Image src={logo} alt="logo" className="w-[86px] object-contain" />
               <div>
                 <h1 className="text-primary font-Arvo font-medium max-w-8/12  text-2xl ">
                   D4A Cloud ERP Solutions
@@ -79,7 +79,7 @@ const Header: React.FC = () => {
                 {social1.map(({ id, icon, text }) => (
                   <div
                     key={id}
-                    className="h-12 px-3 flex items-center gap-2 border-r-[1px] border-black border-dotted"
+                    className="h-12 px-3 text-sm flex items-center gap-2 border-r-[1px] border-black border-dotted"
                   >
                     <span>{icon}</span>
                     <p className=" text-black2 font-serif">{text}</p>
@@ -104,29 +104,33 @@ const Header: React.FC = () => {
                   key={id}
                   className={`${
                     id === 1 ? "bg-primary text-white" : ""
-                  } text-center relative flex gap-2 items-center py-[8px] px-[16px] rounded cursor-pointer hover:bg-primary hover:text-white`}
+                  } text-center relative flex gap-2 items-center py-[5px] px-[14px] rounded cursor-pointer hover:bg-primary hover:text-white`}
                   onMouseEnter={() => handleEnter(id)}
                   onMouseLeave={handleLeave}
                 >
-                  <p className="font-serif lg:text-xs xl:text-base ">{link}</p>
+                  <p className="font-serif lg:text-xs xl:text-base  text-center   ">{link}</p>
                   <span>{icon}</span>
                   {submenu && (
-                  <ul
+                  <motion.ul
+                  initial={{ opacity:0 }}
+                  whileInView={{ opacity:100 }}
+                  transition={{ duration: 0.3 }}
+                 
                     className={`${
                       Openindex === id
                         ? "block  opacity-100"
                         : "hidden opacity-0"
-                    } absolute top-14 left-0 transition-all duration-300 bg-primary w-64 text-start font-serif `}
+                    } absolute z-50 top-14 left-0 bg-primary w-64 text-start font-serif `}
                   >
                       {submenu.map(({ id, text }) => (
                         <li
                           key={id}
-                          className="px-4 py-3 border-b-[1px] border-white text-white"
+                          className="px-4 py-3  border-b-[1px] border-white text-white"
                         >
                           {text}
                         </li>
                       ))}
-                    </ul>
+                    </motion.ul>
                     )}
                 </div>
               ))}
