@@ -7,3 +7,52 @@
 
 }
 
+
+/* CustomCalendar.css */
+.custom-calendar {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.custom-calendar .react-calendar__navigation {
+  background-color: #4a90e2;
+  color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  border-radius: 10px 10px 0 0;
+}
+
+.custom-calendar .react-calendar__tile {
+  background-color: #fff;
+  color: #333;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-calendar .react-calendar__tile--active {
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 8px;
+}
+
+.custom-calendar .react-calendar__tile:hover {
+  background-color: #f0f0f0;
+}
+
+.custom-calendar .react-calendar__tile--now {
+  background-color: #f9f9f9;
+  border: 1px solid #4a90e2;
+  color: #4a90e2;
+}
+
+.custom-calendar .react-calendar__month-view__days__day--neighboringMonth {
+  color: #999;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}

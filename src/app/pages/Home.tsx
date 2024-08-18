@@ -17,6 +17,8 @@ import { FaRegCheckCircle } from "react-icons/fa";
 import { boxes, Flex, saas, countryTimezones } from "./data";
 import { PiChatsBold } from "react-icons/pi";
 import { Select,SelectProps } from "antd";
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 const { Option } = Select;
 export default function Home() {
   const [Tab, setTab] = useState<Number>(1);
@@ -55,10 +57,7 @@ export default function Home() {
       },
     },
   };
-  type SelectPropsWithLabel = SelectProps<string> & {
-    optionLabelProp?: string;
-    label?:string
-  };
+ 
   return (
     <main>
       <span className="fixed z-50 text-3xl md:text-4xl bg-[#949393] rounded-full text-white p-2 md:p-3 bottom-5 right-2 ">
@@ -278,8 +277,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col-reverse md:flex-row justify-between">
                     <div>
-                        month
-
+                    <Calendar defaultView="month" className='custom-calendar'/>     
                     </div>
                     <div>
                       <Select
@@ -315,7 +313,9 @@ export default function Home() {
               Your appointment will be booked with{" "}
             </p>
             <div className="flex  flex-col-reverse gap-y-2 md:flex-row  justify-between">
-              <div className="grid place-items-center">month</div>
+              <div className="grid place-items-center mt-10">
+              <Calendar defaultView="month"/>     
+                         </div>
               <div className="mt-10">
               <Select
                         showSearch
