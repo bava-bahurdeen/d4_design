@@ -29,7 +29,7 @@ const config: Config = {
         trebuchet: ['"Trebuchet MS"', 'sans-serif'],
       },
       fontWeight:{
-        medium: '500',
+        medi: '500',
       },
 
     colors:{

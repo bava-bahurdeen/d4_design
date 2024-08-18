@@ -76,15 +76,15 @@ export default function Home() {
             >
               <h1 className="text-primary  w-[18rem]  md:w-[25rem]  !leading-[3rem]  text-center text-wrap text-2xl lg:text-3xl">
                 {" "}
-                <span className="text-4xl md:text-6xl font-medium ">
+                <span className="text-4xl md:text-6xl font-[50px]  ">
                   TRANSFORM
                 </span>{" "}
                 YOUR{" "}
-                <span className="text-4xl md:text-6xl ">
+                <span className="text-4xl md:text-6xl medium ">
                   BUSINESS{" "}
                 </span>{" "}
                 WITH THE WORLD{"'"}S
-                <span className=" text-4xl md:text-6xl ">
+                <span className=" text-4xl md:text-6xl medium ">
                   BEST AUTOMATION
                 </span>{" "}
                 SOFTWARE!
@@ -277,7 +277,6 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col-reverse md:flex-row justify-between">
                     <div>
-                    <Calendar defaultView="month" className='custom-calendar'/>     
                     </div>
                     <div>
                       <Select

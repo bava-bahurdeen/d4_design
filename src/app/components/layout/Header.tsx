@@ -66,7 +66,7 @@ const Header: React.FC = () => {
             <div className="flex flex-col lg:flex-row gap-x-3">
               <Image src={logo} alt="logo" className="w-[86px] object-contain" />
               <div className="mt-4 lg:mt-0">
-                <h1 className="text-primary font-Arvo font-medium max-w-8/12  text-2xl ">
+                <h1 className="text-primary font-Arvo  max-w-8/12  text-2xl ">
                   D4A Cloud ERP Solutions
                 </h1>
                 <p className="text-sm font-Arimo text-black1">
