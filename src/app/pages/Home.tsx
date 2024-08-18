@@ -263,7 +263,7 @@ export default function Home() {
                     <Image src={logo} className="w-16" alt="logo" />
                     <p className="text-white">Let{"'"}s Talk</p>
                   </div>
-                  <div className="flex items-center">
+                  <div className="flex items-center gap-x-3">
                     <p className="text-xs text-white">15 mins</p>
                     <span className="text-secondary">
                       <FaRegCheckCircle />
