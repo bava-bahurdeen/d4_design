@@ -15,7 +15,7 @@ export default function Footer() {
        <Image src={zoho}  alt='footer-image' className='w-36 object-contain' />
        <Image src={qatar} alt='footer-image' className='w-36 object-contain'/>
     </div>
-    <div className='flex flex-col md:flex-row items-start md:items-center gap-x-4 lg:gap-x-14  xl:gap-x-28'>
+    <div className='flex flex-col md:flex-row items-start md:items-center gap-x-4 lg:gap-x-14  xl:gap-x-28 font-rubik'>
         {footer.map(({id,icon,text})=>{
             return(
                 <div key={id} className='flex mt-7 sm:mt-0 justify-center items-center gap-x-2 text-white'>
@@ -25,7 +25,7 @@ export default function Footer() {
             )
         })}
     </div>
-    <p className='text-white text-center   text-md xl:text-xl mt-10'>Copyright © 2022 D4A Cloud ERP Solutions QFZ LLC. All rights reserved.</p>
+    <p className='text-white text-center  font-rubik  text-md xl:text-xl mt-10'>Copyright © 2022 D4A Cloud ERP Solutions QFZ LLC. All rights reserved.</p>
 </div>
     </footer>
   )

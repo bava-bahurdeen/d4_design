@@ -16,7 +16,7 @@ import logo from "@assets/nav/D4A-logo Only-final-vertical -1.png";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { boxes, Flex, saas, countryTimezones } from "./data";
 import { PiChatsBold } from "react-icons/pi";
-import { Select,SelectProps } from "antd";
+import { Select } from "antd";
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 const { Option } = Select;
@@ -74,17 +74,17 @@ export default function Home() {
               variants={hero1}
               className="grid place-items-center gap-y-4"
             >
-              <h1 className="text-primary font-Arvo w-[18rem]  md:w-[25rem] font-semibold !leading-[3rem]  text-center text-wrap text-2xl lg:text-3xl">
+              <h1 className="text-primary  w-[18rem]  md:w-[25rem]  !leading-[3rem]  text-center text-wrap text-2xl lg:text-3xl">
                 {" "}
-                <span className="text-4xl md:text-6xl font-semibold">
+                <span className="text-4xl md:text-6xl font-medium ">
                   TRANSFORM
                 </span>{" "}
                 YOUR{" "}
-                <span className="text-4xl md:text-6xl font-semibold">
+                <span className="text-4xl md:text-6xl ">
                   BUSINESS{" "}
                 </span>{" "}
                 WITH THE WORLD{"'"}S
-                <span className=" text-4xl md:text-6xl font-semibold">
+                <span className=" text-4xl md:text-6xl ">
                   BEST AUTOMATION
                 </span>{" "}
                 SOFTWARE!

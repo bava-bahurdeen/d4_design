@@ -1,12 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 .welcome{
   background:  linear-gradient(rgba(46, 45, 45, 0.8), rgba(46, 45, 45, 0.8)), url(./assets/bg/businessman-pointing-his-presentation-futuristic-digital-screen__1_.jpeg) center/cover no-repeat; 
 
 }
-
 
 /* CustomCalendar.css */
 .custom-calendar {

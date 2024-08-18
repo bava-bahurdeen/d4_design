@@ -1,4 +1,4 @@
-import { Arimo } from "next/font/google";
+
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -17,14 +17,21 @@ const config: Config = {
         xl: '5rem',
         '2xl': '6rem',
       },
+  
     },
-    fontFamily:{
-      arvo: ['Arvo', 'serif'],
-      Arimo:[ "Arimo", "sans-serif"],
-      serif: ['"MS Serif"', 'New York', 'serif'],
-      trebuchet: ['"Trebuchet MS"', 'sans-serif'],
-    },
+    
+  
     extend: {
+      fontFamily:{
+        Arimo:[ "Arimo", "sans-serif"],
+        rubik:["Rubik", "sans-serif;"],
+        serif: ['"MS Serif"', 'New York', 'serif'],
+        trebuchet: ['"Trebuchet MS"', 'sans-serif'],
+      },
+      fontWeight:{
+        medium: '500',
+      },
+
     colors:{
       primary:"#8a1538",
       secondary:"#ffc600",

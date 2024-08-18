@@ -59,13 +59,13 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <header className="container mx-auto pt-12 shadow">
+      <header className="container mx-auto pt-6 lg:pt-12 shadow">
         <nav className="flex justify-between items-center lg:items-stretch lg:flex-col lg:justify-center">
           {/* First Menu */}
           <div className="flex  justify-around items-center">
             <div className="flex flex-col lg:flex-row gap-x-3">
               <Image src={logo} alt="logo" className="w-[86px] object-contain" />
-              <div>
+              <div className="mt-4 lg:mt-0">
                 <h1 className="text-primary font-Arvo font-medium max-w-8/12  text-2xl ">
                   D4A Cloud ERP Solutions
                 </h1>
