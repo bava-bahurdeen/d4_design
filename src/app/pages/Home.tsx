@@ -104,7 +104,7 @@ export default function Home() {
               animate="visible"
               exit="hidden"
               variants={hero2}
-              className=" grid place-items-center space-y-10"
+              className=" grid place-items-center space-y-14"
             >
               <Image src={zoho} alt="zoho" className="w-[290px]"></Image>
               <Image src={tally} alt="tally" className="w-[236px]"></Image>
@@ -285,7 +285,7 @@ export default function Home() {
                       <Select
                         showSearch
                         placeholder="Select a Timezone"
-                        className="!w-56 !h-10 !text-slate-400"
+                        className="!w-56 !h-10 !bg-transparent !text-slate-400"
                         // filterOption={(input, option) =>
                         //   (option?.label ?? "").toLowerCase()
                         //     .includes(input.toLowerCase())
@@ -390,10 +390,10 @@ export default function Home() {
                 >
                   <Image src={Img} alt="flex image" className="lg:w-5/12" />
                   <div className="font-trebuchet grid place-items-center text-start md:text-center  w-full lg:text-start space-y-4">
-                    <h2 className="text-primary text-start text-xl  md:text-3xl font-semibold ">
+                    <h2 className="text-primary text-start text-2xl  md:text-3xl font-semibold ">
                       {head}
                     </h2>
-                    <p className="text-sm md:text-lg w-10/12 text-start md:text-center lg:text-start ">
+                    <p className="  text-lg w-10/12 text-start md:text-center lg:text-start ">
                       {lead}
                     </p>
                   </div>
@@ -428,7 +428,7 @@ export default function Home() {
                     {icon}
                   </span>
                   <h2 className="text-lg font-semibold text-primary">{head}</h2>
-                  <p className="text-sm">
+                  <p className="">
                     {lead}{" "}
                     <span className="text-primary font-semibold">{high}</span>{" "}
                     {lead2}{" "}

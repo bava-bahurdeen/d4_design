@@ -25,7 +25,7 @@ export default function Footer() {
             )
         })}
     </div>
-    <p className='text-white text-xs  md:text-md xl:text-xl mt-10'>Copyright © 2022 D4A Cloud ERP Solutions QFZ LLC. All rights reserved.</p>
+    <p className='text-white text-center   text-md xl:text-xl mt-10'>Copyright © 2022 D4A Cloud ERP Solutions QFZ LLC. All rights reserved.</p>
 </div>
     </footer>
   )
