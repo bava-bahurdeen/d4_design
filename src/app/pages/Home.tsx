@@ -192,8 +192,8 @@ export default function Home() {
       <section></section>
       {/* welcome section */}
       <section>
-        <div className="container mx-auto welcome w-full h-screen mt-20 py-6">
-          <div>
+        <div className="container mx-auto welcome w-full h-screen mt-20  lg:py-6">
+          <div className="hidden lg:block">
             <h2 className="text-secondary text-center font-roboto text-3xl font-semibold ">
               Welcome!
             </h2>
@@ -310,17 +310,17 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="pt-16 xl:hidden">
+          <div className="pt-12 xl:hidden">
             <p className="text-white text-xs">
               Your appointment will be booked with{" "}
             </p>
             <div className="flex  flex-col-reverse gap-y-2 md:flex-row  justify-between">
               <div className="grid place-items-center">month</div>
-              <div>
+              <div className="mt-10">
               <Select
                         showSearch
                         placeholder="Select a Timezone"
-                        className="!w-56 !h-10 !text-slate-400"
+                        className="!w-full !h-10 !text-slate-400"
                         // filterOption={(input, option) =>
                         //   (option?.label ?? "")
                         //     .toLowerCase()
