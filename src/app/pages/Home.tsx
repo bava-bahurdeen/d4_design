@@ -16,7 +16,7 @@ import logo from "@assets/nav/D4A-logo Only-final-vertical -1.png";
 import { FaRegCheckCircle } from "react-icons/fa";
 import { boxes, Flex, saas, countryTimezones } from "./data";
 import { PiChatsBold } from "react-icons/pi";
-import { Select } from "antd";
+import { Select,SelectProps } from "antd";
 const { Option } = Select;
 export default function Home() {
   const [Tab, setTab] = useState<Number>(1);
@@ -55,10 +55,13 @@ export default function Home() {
       },
     },
   };
-
+  type SelectPropsWithLabel = SelectProps<string> & {
+    optionLabelProp?: string;
+    label?:string
+  };
   return (
     <main>
-      <span className="fixed z-50 text-3xl md:text-5xl bg-[#949393] rounded-full text-white p-2 md:p-4 bottom-5 right-2 ">
+      <span className="fixed z-50 text-3xl md:text-4xl bg-[#949393] rounded-full text-white p-2 md:p-3 bottom-5 right-2 ">
         <PiChatsBold />
       </span>
       {/* hero section */}
@@ -274,7 +277,10 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="flex flex-col-reverse md:flex-row justify-between">
-                    <div>month</div>
+                    <div>
+                        month
+
+                    </div>
                     <div>
                       <Select
                         showSearch
@@ -309,7 +315,7 @@ export default function Home() {
               Your appointment will be booked with{" "}
             </p>
             <div className="flex  flex-col-reverse gap-y-2 md:flex-row  justify-between">
-              <div>month</div>
+              <div className="grid place-items-center">month</div>
               <div>
               <Select
                         showSearch

@@ -15,6 +15,7 @@ const Header: React.FC = () => {
 
   const handleEnter = (index: number) => {
     setOpenindex(index);
+
   };
 
   const handleLeave = () => {
@@ -24,7 +25,7 @@ const Header: React.FC = () => {
     setIsopen(!Isopen);
   };
   const handleclick = (index: number) => {
-    setOpenindex(index);
+    setOpenindex(index)
   };
   useEffect(() => {
     const handleScroll = () => {
@@ -110,13 +111,13 @@ const Header: React.FC = () => {
                   <p className="font-serif lg:text-xs xl:text-base ">{link}</p>
                   <span>{icon}</span>
                   {submenu && (
-                    <ul
-                      className={`${
-                        Openindex === id
-                          ? "block transition-all duration-300 opacity-100"
-                          : "hidden opacity-0"
-                      } absolute top-14 left-0 bg-primary w-64 text-start font-serif`}
-                    >
+                  <ul
+                    className={`${
+                      Openindex === id
+                        ? "block  opacity-100"
+                        : "hidden opacity-0"
+                    } absolute top-14 left-0 transition-all duration-300 bg-primary w-64 text-start font-serif `}
+                  >
                       {submenu.map(({ id, text }) => (
                         <li
                           key={id}
@@ -126,7 +127,7 @@ const Header: React.FC = () => {
                         </li>
                       ))}
                     </ul>
-                  )}
+                    )}
                 </div>
               ))}
             </div>
